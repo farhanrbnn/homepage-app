@@ -1,0 +1,128 @@
+@font-face {
+
+  font-family: roboto;
+  src: url('static/fonts/RobotoMono-Light.ttf') format('opentye');
+}
+
+body {
+    background: linear-gradient(-45deg, #f08080, #ff7f00, #ff69b4, #ff4500);
+    background-size: 1000% 1000%;
+    animation: gradient 8s ease infinite;
+    height: 100%
+}
+
+body {
+
+	height: 100%;
+}
+
+.container-fluid {
+
+	margin-top: 15%;
+
+}
+
+h1 {
+
+	font-size: 6rem;
+}
+
+h3 {
+
+  font-size: 3.5rem;
+}
+
+input[type='text'] {
+  width: 400px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.col-md-12 {
+	width: 800px;
+}
+
+.paragraph {
+
+	margin-top: 20%;
+}
+
+#fade-out {
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+.line-1{
+    position: relative;
+    top: 35%;  
+    width: 12em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 120%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+    font-family: 'roboto', serif; 
+
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.anim-typewriter-m{
+  animation: typewriter-m 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.anim-typewriter-a{
+  animation: typewriter-a 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.anim-typewriter-n{
+  animation: typewriter-n 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 20em;}
+}
+
+@keyframes typewriter-n{
+  from{width: 0;}
+  to{width: 13em;}
+}
+
+@keyframes typewriter-m{
+  from{width: 0;}
+  to{width: 20em;}
+}
+
+@keyframes typewriter-a{
+  from{width: 0;}
+  to{width: 12em;}
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(100,100,100,.75);}
+  to{border-right-color: transparent;}
+}

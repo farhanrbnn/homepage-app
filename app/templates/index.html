@@ -1,0 +1,24 @@
+{% include 'base.html' %}
+
+{% block body %}
+
+<div class="container-fluid d-flex align-items-center justify-content-center">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="text-center" id="hour-display"></h1>
+			<div id="fade-out">
+				<h3 class="text-center"></h3>	
+			</div>	
+			<form class="d-flex justify-content-center" method="GET" action="https://www.google.com/search">
+				<input class="text-center" type="text" name="q" placeholder="Google Search" autocomplete="off">
+			</form>
+				<p class="line-1 anim-typewriter" id="evening"></p>
+				<p class="line-1 anim-typewriter-m" id="morning"></p>
+				<p class="line-1 anim-typewriter-a" id="afternoon"></p>
+				<p class="line-1 anim-typewriter-n" id="night"></p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+{% endblock%}
